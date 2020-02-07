@@ -30,5 +30,25 @@ public class TarifasTest {
     public void deberiaSerMenorValido() {
         Assert.assertEquals(950.0, (cal.calculoTarifa(1000,0,17)),0.0);
     }
+    @Test
+    public void deberiaSerMayorValido() {
+        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,0,19)),0.0);
+    }
+    @Test
+    public void deberiaSerEdadValido() {
+        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,0,18)),0.0);
+    }
+    @Test
+    public void deberiaSerMenosDias() {
+        Assert.assertEquals(950.0, (cal.calculoTarifa(1000,5,0)),0.0);
+    }
+    @Test
+    public void deberiaSerMasDias() {
+        Assert.assertEquals(800.0, (cal.calculoTarifa(1000,21,0)),0.0);
+    }
+    @Test
+    public void deberiaSerMismoDias() {
+        Assert.assertEquals(950.0, (cal.calculoTarifa(1000,20,2)),0.0);
+    }
    
 }
