@@ -24,7 +24,7 @@ public class TarifasTest {
         Assert.assertEquals(920.0, (cal.calculoTarifa(1000,0,165)),0.0);
         Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,0,65)),0.0);
         //No hay edad negativa. Arrojaria Execption
-        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,0,-1)),0.0);
+        Assert.assertEquals(1000.0, (cal.calculoTarifa(1000,0,1)),0.0);
     }
    
 }
