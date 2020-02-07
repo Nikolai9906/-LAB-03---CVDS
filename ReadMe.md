@@ -17,8 +17,10 @@
 |3	         |edad > 65|Descuento 8%|920
 |4	         |diasAntelacion > 20 && edad < 18|Descuento 20%       |800|
 |5	         |diasAntelacion > 20 && edad > 65|Descuento 23%|770|
-|6	         |18 <= edad <= 65 \|\| 0 => diasAntelacion <= 20 |Descuento 0%|1000|
+|6	         |18 <= edad <= 65 \|\| 0 => diasAntelacion < 20 |Descuento 0%|1000|
 |7	         |0 < edad  \|\| diasAntelacion < 0  |Incorrecto|Datos Invalidos |
+|8	         |diasAntelacion = 20  |Incorrecto|Libreria perzonalizada tiene un error |
+
 
 * A partir de las clases de equivalencia establecidas, las condiciones de limite o de frontera son:
 - Edad < 18
