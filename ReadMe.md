@@ -33,4 +33,5 @@
 - DiasAntelacion = 20
 - DiasAntelacion > 20
 
+## Informacion Adicional
 > Nos damos cuenta que existe un error en la libreria, debido a que cuando los dias de Antelacion es 20,no toma ningun caso referente a la edad. Lo cual implica que no se cumpla los esquemas de Clases de Equivalencia con las fronteras establecidas.
